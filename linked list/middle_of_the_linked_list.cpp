@@ -8,13 +8,16 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
         ListNode *temp,*cur;
     temp=cur=head;
     int count=1,mid;
-    while(temp->next!=0){
+        
+    while(temp->next!=0)
+    {
         count++;
         temp=temp->next;
     }
